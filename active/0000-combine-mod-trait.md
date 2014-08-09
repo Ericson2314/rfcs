@@ -1,10 +1,12 @@
-- Start Date: (fill me in with today's date, YYYY-MM-DD)
+- Start Date: (fill me in with today's date, 2014-08-07)
 - RFC PR: (leave this empty)
 - Rust Issue: (leave this empty)
 
 # Summary
 
-One para explanation of the feature.
+Traits/type classes and ML both have their advantages, but it is possible to have the best of both
+worlds. This is a proposal to extend rust modules to be as powerful as their ML cousins, and as
+convenient as traits, subsuming rust mods and traits.
 
 # Motivation
 
