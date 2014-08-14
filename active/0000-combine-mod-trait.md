@@ -48,7 +48,7 @@ fn union<'a, T, inst : Ord<T>>(self : &'a TreeSet<T, inst>, other : &'a TreeSet<
 Now the type system prevents unions of Treesets with a different ordering.
 
 
-### std lib modularity and platform compatibility.
+## std lib modularity and platform compatibility.
 
 In RFC pull #____ there is discussion on how to make the std library more easily portable to other
 systems. The basic problems are
@@ -85,7 +85,7 @@ this (yay!) this detailed design would probably get changed anyways. Therefore I
 below, I am going to pretend higher-kinded types already exists. The allowance of HKTs simplifies
 the presentation.
 
-### Modules++
+## Modules++
 
 With HKT, Rust will have (roughly, I am speculating at the of the day) following kind language:
 
@@ -144,7 +144,7 @@ Note: Since Sigs are proper kind, pull #192 is subsumed.
 The unifying idea behind sigs is we can think of them as a generalization of structs in that they
 can contain more sorts of things, but all such things must be "routed" at compile time.
 
-### Getting back traits
+## Getting back traits
 
 So how to get back everything we know and love about traits and impls? Traits today can be modeled
 as a sig with a single paramter of kind `Type`:
@@ -204,7 +204,7 @@ mod <inst : Tr2, Ty1 : Type, Ty2 : Type, Ty3 : Type > new-ID : Tr<Ty0<Ty1, Ty5>>
 }
 ```
 
-##### `use` in the new system
+## `use` in the new system
 
 The rules are simple, if one `use`s sig, The definitions of the current module will be brought into
 scope, with a module of that sig as a new first `<...>` parameter. Since `<...>` parameters can have
