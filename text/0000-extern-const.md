@@ -28,9 +28,8 @@ Consider the following x86 assembly (NASM syntax):
    global my_proc
    
    my_proc:
-       mov ECX, NUM_CORES - 1
+       mov ECX, NUM_CORES
    loop:
-       j
        ; Do Something
        dec ECX
        test ECX, ECX
